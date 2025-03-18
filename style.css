@@ -1,0 +1,33 @@
+/* Archivo: styles.css (Estilos con Bootstrap) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    color: #333;
+}
+
+.bg-primary {
+    background-color: #007bff !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-dark th {
+    background-color: #343a40;
+    color: white;
+}
+
+.btn {
+    border-radius: 5px;
+}
