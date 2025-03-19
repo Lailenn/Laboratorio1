@@ -22,7 +22,7 @@ h2 {
 }
 
 .table-dark th {
-    background-color: hsl(225, 75%, 46%) !important; /* Cambia este color */
+    background-color: hsl(225, 75%, 46%) !important; 
     color: white !important;
     font-size: 18px !important;
     text-align: center !important;

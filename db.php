@@ -1,5 +1,5 @@
 <?php
-// Archivo: db.php (Conexión a la base de datos)
+//  (Conexión a la base de datos)
 $host = 'localhost';
 $user = 'root';
 $pass = '';

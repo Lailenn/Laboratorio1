@@ -1,22 +1,22 @@
 <?php
 include 'db.php';
 
-// Verificar si el ID está presente en la URL
+
 if (!isset($_GET['id']) || empty($_GET['id'])) {
     die("Error: ID no proporcionado.");
 }
 
-$id = intval($_GET['id']); // Asegura que el ID sea un número entero
+$id = intval($_GET['id']); 
 $result = $conn->query("SELECT * FROM agenda_de_contacto.usuarios WHERE id=$id");
 
-// Verificar si el usuario existe
+
 if ($result->num_rows == 0) {
     die("Error: No se encontró el usuario con ID $id.");
 }
 
 $row = $result->fetch_assoc();
 
-// Si se envió el formulario, actualizar el contacto
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
